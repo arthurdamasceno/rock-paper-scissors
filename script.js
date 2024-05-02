@@ -21,6 +21,7 @@ function getHumanChoice() {
     return humanChoice;
 }
 
+// Function that runs only one round of rock paper scissor
 function playRound(humanChoice, computerChoice) {
     if (humanChoice == computerChoice){
         console.log(`Tied! Both chose ${humanChoice}!`);
@@ -51,6 +52,7 @@ function playRound(humanChoice, computerChoice) {
     }
 }
 
+// Function that plays the whole game, which is 5 rounds
 function playGame (){
     for (let i = 0; i < 5; i++){
         let humanChoice = getHumanChoice();
