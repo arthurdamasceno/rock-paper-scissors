@@ -22,8 +22,8 @@ function getHumanChoice() {
 }
 
 function playRound(humanChoice, computerChoice) {
-    if (humanChoice == "rock" && computerChoice == "rock"){
-        console.log("Tied, rock and rock!");
+    if (humanChoice == computerChoice){
+        console.log(`Tied! Both chose ${humanChoice}!`);
     }
     else if (humanChoice == "rock" && computerChoice == "paper"){
         console.log("Computer scores! Paper beats rock!");
@@ -37,9 +37,6 @@ function playRound(humanChoice, computerChoice) {
         console.log("Human scores! Paper beats rock!");
         humanScore++;
     }
-    else if (humanChoice == "paper" && computerChoice == "paper"){
-        console.log("Tied, paper and paper!");
-    }
     else if (humanChoice == "paper" && computerChoice == "scissor"){
         console.log("Computer scores! Scissor beats paper");
         computerScore++;
@@ -51,9 +48,6 @@ function playRound(humanChoice, computerChoice) {
     else if (humanChoice == "scissor" && computerChoice == "paper"){
         console.log("Human scores! Scissor beats paper!");
         humanScore++;
-    }
-    else if (humanChoice == "scissor" && computerChoice == "scissor"){
-        console.log("Tied, scissor and scissor");
     }
 }
 
