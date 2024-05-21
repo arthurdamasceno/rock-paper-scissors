@@ -3,16 +3,32 @@
     <head>
         <title>Rock Paper Scissors</title>
         <meta charset="UTF-8">
+        <link rel="stylesheet" href="./style.css">
+        <script src="./script.js" defer></script>
     </head>
 
     <body>
-        <div class="options">
-            <button class="option" id="rock">Rock</button>
-            <button class="option" id="paper">Paper</button>
-            <button class="option" id="scissor">Scissor</button>
+        <div class="main-container">  
+            <div class="header">Rock-Paper-Scissor</div>
+            <div class=center-container>
+                <div class="player-infos">
+                    <h3>Player</h3>
+                    <h2 id="human_score">0</h2>
+                    <h4 id="human_selection"></h4>
+                </div>
+                <h3>X</h3>
+                <div class="computer-infos">
+                    <h3>Computer</h3>
+                    <h2 id="computer_score">0</h2>
+                    <h4 id="computer_selection"></h4>
+                </div>
+            </div>
+            <div class="actual-result"></div>
+            <div class="buttons-container">
+                <button class="buttons" id="rock">Rock</button>
+                <button class="buttons" id="paper">Paper</button>
+                <button class="buttons" id="scissor">Scissor</button>
+            </div>
         </div>
-
-
-        <script src="./script.js"></script>
     </body>
 </html>
